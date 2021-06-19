@@ -1,1 +1,559 @@
-<h1> hello world! </h1>
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="ICON" href="favicon.ico" type="image/ico" />
+  <title>Larry Tsao</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="w3-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Lato|Open+Sans|Raleway|Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif;
+    }
+
+    ul {
+      list-style-position: outside;
+      padding-left: 16px;
+    }
+
+    body,
+    html {
+      height: 100%;
+      color: #000;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+
+    .bgimg-1 {
+      background-image: url('main.jpg');
+      min-height: 100%;
+    }
+
+    /* Second image (Resume) */
+
+    .bgimg-2 {
+      background-image: url("lightingcover.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Portfolio) */
+
+    .bgimg-3 {
+      background-image: url("logobackground.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (Contact) */
+
+    .bgimg-4 {
+      background-image: url("deskcoffee.jpeg");
+      min-height: 400px;
+    }
+
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+</header>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" style="text-align:center; display: inline-block; " id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+      <a href="#home" class="w3-button"><i class="fa fa-bookmark-o cyan-slow-hover"></i> | HOME</a>
+      <a href="#about" class="w3-button w3-hide-small"><i class="fa fa-user-o cyan-slow-hover"></i> | ABOUT</a>
+      <a href="#resume" class="w3-button w3-hide-small"><i class="fa fa-th cyan-slow-hover"></i> | RESUME</a>
+      <a href="#portfolio" class="w3-button w3-hide-small"><i class="fa fa-ravelry cyan-slow-hover"></i> | PORTFOLIO</a>
+      <a href="#contact" class="w3-button w3-hide-small"><i class="fa fa-envelope-open-o cyan-slow-hover"></i> | CONTACT</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#resume" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    </div>
+  </div>
+
+
+
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min fade-in-hero-image" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LARRY TSAO</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h2 class="w3-center section-title-padding">ABOUT ME</h2>
+    <p class="w3-center section-title-padding"><em>a short bio + my interests</em></p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large w3-margin-aboutme">
+        <img src="profilepic1.jpg" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+        <p><i>a photo of me glancing to the side mysteriously under a wreath of flowers</i></p><br>
+
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6  w3-padding-large">
+        <p>Hi, I’m Larry! </p>
+        <p>I’m a first-year college student at University of California, Riverside currently working towards my Bachelors of Arts in Sociology.
+          <p>In the graphic design field, I’ve designed posters, buttons, book covers, and branding both professionally and as personal projects. At Stream of Praise Music Ministries, a Christian Mandarin-Chinese worship group, I have directed various productions
+            as lighting director as well as intern as an administrative assistant in Spring 2020. I still assist various productions as lighting director as they arise.</p>
+          <p>In my free time, you’ll find me reading a good sci-fi book, playing video games, or listening to music. As for my passions, they reside within various creative and technical fields. I love tinkering and working on various personal projects,
+            from the creative, like graphic design, video editing, lighting design, to the deeply technical, like pc building, jailbreaking, and various other bits and pieces I’ve dabbled in over the years.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Second Parallax Image with Resume Text -->
+  <div class="bgimg-2 w3-center w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-padding-large w3-black w3-xxlarge w3-text-white w3-wide">RESUME</span>
+    </div>
+  </div>
+
+  <!-- Container (Resume Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="resume">
+    <h2 class="w3-center section-title-padding">RESUME</h2>
+    <p class="w3-center section-title-padding"><em>my education, work experience, and more</em></p>
+
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin w3-padding-large" style="max-width:1000px;">
+
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+
+        <!-- Left Column -->
+        <div class="w3-third">
+
+          <div class="w3-white">
+            <div class="w3-container">
+
+              <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-graduation-cap fa-fw w3-hover-text-black w3-margin-right w3-xlarge cyan-slow-hover"></i>Education</h2>
+              <div class="w3-container">
+                <h5 class="montserrat"><b>University of California, Riverside</b></h5>
+                <h6 class="w3-opacity w3-no-margin-bottom montserrat"><i>Sociology, B.A.</i></h6>
+                <h6 class="w3-opacity w3-no-margin-bottom"><i class="fa fa-map-marker fa-fw w3-hover-text-black cyan-slow-hover"></i> | Riverside, CA</h6>
+                <h6 class="w3-opacity w3-no-margin-top w3-no-margin-bottom"><i class="fa fa-calendar fa-fw w3-hover-text-black cyan-slow-hover"></i> | Expected Graduation: Spring 2024</h6>
+                <p class="w3-no-margin-bottom">Coursework:</p>
+                <ul style="list-style-type: circle; margin-top: 4px;">
+                  <li>Intro to Computing (Web Design/MS Office)</li>
+                  <li>Effective Use of the World Wide Web (Web Design/Internet)</li>
+                  <li>Comparative Politics</li>
+                  <li>Social Problems</li>
+              </div>
+
+              <div class="w3-container">
+                <h5 class="w3-opacity montserrat"><b>Google via Coursera</b></h5>
+                <h6 class="w3-opacity w3-no-margin-bottom montserrat"><i>IT Support Professional Certificate</i></h6>
+                <h6 class="w3-opacity w3-no-margin-bottom"><i class="fa fa-map-marker fa-fw w3-hover-text-black cyan-slow-hover"></i> | Online via Coursera</h6>
+                <h6 class="w3-opacity w3-no-margin-top w3-no-margin-bottom"><i class="fa fa-calendar fa-fw w3-hover-text-black cyan-slow-hover"></i> | In Progress</h6>
+                <p class="w3-no-margin-bottom">Coursework:</p>
+                <ul style="list-style-type: circle; margin-top: 4px;">
+                  <li>Technical Support Fundamentals</li>
+                  <li>Computer Networking</li>
+                  <li>Operating Systems</li>
+                  <li>System Administration and IT Infrastructure Services</li>
+                  <li>IT Security </li>
+              </div>
+
+              <br>
+
+              <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-asterisk fa-fw w3-hover-text-black w3-margin-right w3-xlarge cyan-slow-hover"></i>Skills</h2>
+              <p>Illustrator/Photoshop/InDesign</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="height:24px;width:80%">
+                </div>
+              </div>
+              <p>Microsoft Office</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="height:24px;width:80%">
+                </div>
+              </div>
+              <p>Premiere Pro</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="height:24px;width:60%">
+                </div>
+              </div>
+              <p>Web Design</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="height:24px;width:60%">
+                </div>
+              </div>
+              <p>Show Lighting/Lighting Design</p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-cyan" style="height:24px;width:40%">
+                </div>
+              </div>
+
+              <br>
+              <br>
+
+              <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-globe fa-fw w3-hover-text-black w3-margin-right w3-xlarge cyan-slow-hover"></i>Languages</h2>
+              <p>English</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:100%"></div>
+              </div>
+              <p>Chinese (Mandarin)</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-cyan" style="height:24px;width:60%"></div>
+              </div>
+
+              <br>
+              <br>
+
+              <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-file-text fa-fw w3-hover-text-black w3-margin-right w3-xlarge cyan-slow-hover"></i>Resume</h2>
+              <a href="Resume (Larry Tsao) v5.pdf" target="_blank">
+              <button class="montserrat w3-center download-box">
+                <h6 class="montserrat"><i class="fa fa-cloud-download w3-large" style="padding-right:5px;"></i><b> View Resume</b></h6>
+              </button>
+              </a>
+
+
+
+              <br>
+            </div>
+          </div><br>
+
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Right Column -->
+        <div class="w3-twothird">
+
+          <div class="w3-container w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-suitcase fa-fw w3-hover-text-black w3-margin-right w3-xlarge cyan-slow-hover"></i>Work Experience</h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity w3-no-margin-bottom montserrat"><b>Lighting Director</b></h5>
+              <h5 class="w3-opacity w3-no-margin-top w3-no-margin-bottom ">Stream of Praise Music Ministries</h5>
+              <h6 class="w3-no-margin-bottom w3-text-cyan"><i class="fa fa-calendar fa-fw w3-hover-text-black w3-margin-right cyan-slow-hover"></i>Dec 2019 - <span class="w3-tag w3-cyan w3-round">Present</span></h6>
+              <p>Stream of Praise is a major Christian Mandarin-Chinese praise & worship group located in Tustin, CA</p>
+              <p><i>NOTE: I assist various productions as lighting director as they arise, I do not work full or part time here</i></p>
+              <ul style="list-style-type: circle;">
+                <li>Directed 8+ productions with ~25 people each by creating a desirable atmosphere and look necessary for worship through programming on an intelligent lighting console reaching an attendance of ~50 people</li>
+                <li>Collaborate with 6 senior leaders to create the production strategy on conceptualization, design, and modification of the stage and lights for 12+ live and taped worship sessions leading to >300K views</li>
+                <li>Assist with the maintenance and troubleshooting of moving 30+ light fixtures during all stages of production to keep the number of issues at 1 or less </li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity w3-no-margin-bottom montserrat"><b>Admistrative Intern</b></h5>
+              <h5 class="w3-opacity w3-no-margin-top w3-no-margin-bottom ">Stream of Praise Music Ministries</h5>
+              <h6 class="w3-text-cyan"><i class="fa fa-calendar w3-hover-text-black fa-fw w3-margin-right cyan-slow-hover"></i>Dec 2019 - Mar 2020</h6>
+              <ul style="list-style-type: circle;">
+                <li>Support the integration of Chinese to English translations across 50+ web pages on WordPress for foreign visitors, boosting traffic and sales by $20K over 3 months in 5 foreign countries </li>
+                <li>Scan 3 boxes of financial records, copyright approvals, etc. to convert into 100+ PDFs for digital categorization leading to easier access, increased office space, and data security</li>
+                <li>Periodically take inventory of merchandise (albums, apparel, etc.) to keep track of revenue and identify missing products through reconciling 2 discrepancies in inventory movement</li>
+                <li>Transfer 12 groups of email addresses from MailChimp to Sendinblue for ~2 weeks leading to a better fit through better value, ease-of-use, and more features for 6 senior leaders</li>
+                <li>Migrate entire discography of 30+ albums on 2+ digital music streaming platforms (Apple Music, Spotify, etc.) from one digital distribution service (Catapult Distribution) to another (BelieveBackstage), resulting in easier accessibility
+                  and better profit margins </li>
+              </ul>
+              <hr>
+            </div>
+          </div>
+
+          <div class="w3-container w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-xlarge"><i class="fa fa-paint-brush w3-hover-text-black fa-fw w3-margin-right w3-xlarge cyan-slow-hover"></i>Projects</h2>
+
+            <div class="w3-container">
+              <h5 class="w3-opacity montserrat"><b>Graphic Design</b></h5>
+              <p>Ever since taking graphic design at my high school, I’ve fallen in love with it. My first design was a poster for my high school’s spirit week, and it was extremely satisfying seeing my work placed all around campus. Since then, I’ve found
+                various personal projects to pursue, some of which you can see below in my portfolio section!</p>
+              <br>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity montserrat"><b>Video Editing</b></h5>
+              <p>In the summer between my sophomore and junior year of high school, I attended a filmmaking camp. It was there I discovered my passion for filmmaking, more specifically video editing. Right after, I remember seeing masterfully edited gaming
+                montages, and many hours were spent trying to get cool clips. Since then I’ve stopped editing gaming montages, but the many hours I spent editing those videos taught me the fundamentals and more of Premiere Pro</p>
+              <br>
+            </div>
+            <div class="w3-container">
+              <h5 class="w3-opacity montserrat"><b>Web Design</b></h5>
+              <p>I’ve never gotten into web design because I’ve always been afraid of the coding aspect, but after learning HTML and CSS in my college CS classes I decided to give it a shot. In making my own website (the one you’re visiting right now!) I
+                have grown to love the convergence of graphic design and coding that results in web design.</p>
+              <br>
+            </div>
+
+          </div>
+
+          <!-- End Right Column -->
+        </div>
+
+        <!-- End Grid -->
+      </div>
+
+      <!-- End Page Container -->
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-padding-large w3-black w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h2 class="w3-center section-title-padding">MY WORK</h2>
+    <p class="w3-center section-title-padding"><em>take a look at some of my work!</em></p>
+
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <h3 class="w3-text-grey w3-xlarge top-portfolio-graphic-design">MY GRAPHIC DESIGN PROJECTS</h3>
+      <p class="w3-center bottom-portfolio-graphic-design"><em>click on the image for a closer look!</em></p>
+      <div class="w3-col m3">
+        <div class="img-zoom-out img-opacity-hover">
+          <img src="portfolio/enchant_your_night.jpg" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Enchant Your Night">
+        </div>
+        <p>Enchant your Night</p>
+        <p><i>a poster advertising my high school's Spirit Night themed around pop culture</i></p>
+      </div>
+
+      <div class="w3-col m3">
+        <div class="w3-margin-bottom img-zoom-out img-opacity-hover">
+          <img src="portfolio/northern_lattes_logo.png" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Northern Lattes logo">
+        </div>
+        <div class="img-zoom-out img-opacity-hover">
+          <img src="portfolio/northern_lattes_mockup.jpg" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Northern Lattes mockup">
+        </div>
+        <p>Northern Lattes Mockup</p>
+        <p><i>branding I created for a trendy and modern coffee shop</i></p>
+      </div>
+
+      <div class="w3-col m3">
+        <div class="img-zoom-out img-opacity-hover">
+          <img src="portfolio/personal_logo.jpg" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Personal Logo">
+        </div>
+        <p>Personal Logo</p>
+        <p><i>a logo I created</i></p>
+      </div>
+
+
+      <div class="w3-col m3">
+        <div class="w3-margin-bottom img-zoom-out img-opacity-hover">
+          <img src="portfolio/book_cover_front.jpg" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Cover for <i>The Martian<i> (Front)">
+        </div>
+        <div class="img-zoom-out img-opacity-hover">
+          <img src="portfolio/book_cover_back.jpg" style="width:100%; cursor:pointer;" onclick="onClick(this)" alt="Cover for <i>The Martian<i> (Back)">
+        </div>
+        <p>The Martian</p>
+        <p><i>my take on an alternate cover for </i>The Martian</p>
+      </div>
+    </div>
+
+
+
+
+    <div class="w3-row-padding w3-center w3-padding-16-bottom">
+      <h3 class="w3-text-grey w3-xlarge top-portfolio-lighting-design">PRODUCTIONS I'VE DIRECTED AS LIGHTING DIRECTOR</h3>
+      <p class="w3-center bottom-portfolio-lighting-design"><em>click on the thumbnail to view the video!</em></p>
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=R4MbmgC5PTo" target="_blank">
+          <div class="img-zoom-out img-opacity-hover">
+            <img src="lighting/hc1.jpg" style="width:100%" alt="[Special Christmas Celebration] Stream of Praise Heaven Worship LIVE | Season 3, EP 4">
+          </div>
+        </a>
+        <p>[Special Christmas Celebration] Stream of Praise Heaven Worship LIVE | Season 3, EP 4</p>
+      </div>
+
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=ibVu_CyRtGY" target="_blank">
+          <div class="img-zoom-out img-opacity-hover">
+            <img src="lighting/hc2.jpg" style="width:100%" alt="[Special LIVE New Year’s Worship] Stream of Praise Heaven Worship LIVE | Season 3, EP 5">
+          </div>
+        </a>
+        <p>[Special LIVE New Year’s Worship] Stream of Praise Heaven Worship LIVE | Season 3, EP 5</p>
+      </div>
+
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=kgo7wYfJ0p8" target="_blank">
+          <div class="img-zoom-out img-opacity-hover">
+            <img src="lighting/hc3.jpg" style="width:100%" alt="Stream of Praise Heaven Worship LIVE | Season 3, EP14">
+          </div>
+        </a>
+        <p>Stream of Praise Heaven Worship LIVE | Season 3, EP14</p>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=1GtjzGdw-Ao" target="_blank">
+          <div class="img-zoom-out img-opacity-hover">
+            <img src="lighting/mv1.jpg" style="width:100%" alt="【得勝的宣告 You Are My Victory】SOP Praise & Worship Album " Here I Am " (25) | Live Worship MV">
+          </div>
+        </a>
+        <p>【得勝的宣告 You Are My Victory】SOP Praise & Worship Album "Here I Am" (25) | Live Worship MV</p>
+      </div>
+
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=dg1Rp4OHlg8" target="_blank">
+          <div class="img-zoom-out img-opacity-hover">
+            <img src="lighting/mv2.jpg" style="width:100%" alt="【祢的救恩 Your Salvation】SOP Praise & Worship Album " Here I Am " (25) | Live Worship MV">
+          </div>
+        </a>
+        <p>【祢的救恩 Your Salvation】SOP Praise & Worship Album "Here I Am" (25) | Live Worship MV</p>
+      </div>
+
+      <div class="w3-col m4">
+        <a href="https://www.youtube.com/watch?v=pmSmBtZ9rNg" target="_blank">
+          <div class="img-zoom-out img-opacity-hovery">
+            <img src="lighting/mv3.jpg" style="width:100%" alt="【聖靈的火 Fire Come Down】SOP Praise & Worship Album " Here I Am " (25) | Live Worship MV">
+          </div>
+        </a>
+        <p>【聖靈的火 Fire Come Down】SOP Praise & Worship Album "Here I Am" (25) | Live Worship MV</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Fourth  Parallax Image for CONTACT -->
+  <div class="bgimg-4 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-padding-large w3-black w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+    </div>
+  </div>
+
+
+  <!-- Container (Contact Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h2 class="w3-center section-title-padding">CONTACT AND SOCIALS</h2>
+    <p class="w3-center section-title-padding"><em>feel free to reach out and say hello!</em></p>
+
+    <div class="w3-row w3-padding-32 w3-section" style="float:center">
+      <div class="w3-col m6 w3-container">
+        <img src="profilepic2.jpg" class="w3-round w3-image" style="float:right;" alt="Photo of me and baby yoda" width="500" height="333">
+      </div>
+      <div class="w3-col m6 w3-panel">
+        <div class="w3-large w3-margin-bottom w3-right">
+          <br>
+          <br>
+          <h5 class="montserrat w3-margin-bottom">I'm currently available for freelance work and projects!</h5>
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right cyan-slow-hover"></i><a href="https://www.google.com/maps/place/Irvine,+CA/@33.686502,-117.8434282,12z/data=!3m1!4b1!4m5!3m4!1s0x80dcdd0e689140e3:0xa77ab575604a9a39!8m2!3d33.6845673!4d-117.8265049" class="link-hover" target="_blank">Irvine, CA</a>/<a href="https://www.google.com/maps/place/Riverside,+CA/@33.9459957,-117.4695673,12z/data=!3m1!4b1!4m5!3m4!1s0x80dca6df7ff47dbb:0xf7a1d705135e0ae8!8m2!3d33.9806005!4d-117.3754942" class="link-hover" target="_blank">Riverside, CA</a><br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right cyan-slow-hover"></i><a href="tel:949-247-9766" class="link-hover" >(949) 247-9766</a><br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right cyan-slow-hover"></i><a href="mailto:email@larrytsao.com" class="link-hover">email@larrytsao.com</a><br>
+          <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right cyan-slow-hover"></i><a href="https://www.linkedin.com/in/larrytsao6" class="link-hover" target="_blank">www.linkedin.com/in/larrytsao6</a><br>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-display-container">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <p style="padding-top: 30px">Copyright © 2021 Larry Tsao</p>
+  </footer>
+
+
+
+
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function() { myFunction() };
+
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      }
+      else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      }
+      else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
